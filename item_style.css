@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    max-width: 1400px;
+    min-height: 1400px;
+}
+
+.section-main {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-main article{
+    flex-basis: 45rem;
+}
+
+.section-main picture {
+    flex-basis: 30rem;
+}
+
+.section-main img {
+    width: 55rem;
+    height: 55rem;
+}
+
+
+.ul-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.ul-container li{
+    flex-basis: 20rem;
+}
+
+.ul-container img {
+    max-width: 40rem;
+    max-height: 40rem;
+}
