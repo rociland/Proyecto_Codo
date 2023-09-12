@@ -47,22 +47,28 @@
                 <label for="productName">Nombre del producto:</label>
                 <input class="form__line" id="line-size" type="text" name="productName" placeholder="Kakashi Hatake Shippuden Saga"><br><br>
                 <textarea class="form__textarea" name="description" id="description" rows="6" cols="50" placeholder="Descripción del producto"></textarea><br><br>
-                <label for="sku">SKU:</label>
-                <input class="form__line" id="line-size2" type="text" name="sku" placeholder="SSK111AB001">
-                <label class="form__subtitle" for="price">Precio:</label>
-                <input class="form__line" id="line-size2" type="number" name="price" min="0" placeholder="$0.000,0">
-                <label class="form__subtitle" for="stock">Stock:</label>
-                <input class="form__line" id="line-size3" type="number" name="stock" min="0" placeholder="0"><br><br>
-                <label for="discount">Descuento:</label>
-                <input class="form__line" id="line-size3" type="number" name="discount" min="0" placeholder="0%">
-                <label class="form__subtitle" for="instalment">Cuotas:</label>
-                <select class="form__select" id="instalment" name="instalment">
-                    <option value="">3 Cuotas sin interés</option>
-                    <option value="">6 Cuotas con interés</option>
-                    <option value="">12 Cuotas con interés</option>
-                </select><br><br>
-                <label for="images">Imágenes:</label>
-                <input type="file" id="file-upload" name="file-upload" accept="image/*"><br><br>
+                <section class="first__line">
+                    <label for="sku">SKU:</label>
+                    <input class="form__line" id="line-size2" type="text" name="sku" placeholder="NAR001012">
+                    <label class="form__subtitle" for="price">Precio:</label>
+                    <input class="form__line" id="line-size2" type="number" name="price" min="0" placeholder="$1.799,00">
+                    <label class="form__subtitle" for="stock">Stock:</label>
+                    <input class="form__line" id="line-size3" type="number" name="stock" min="0" placeholder="10"><br><br>
+                </section>
+                <section class="first__line">
+                    <label for="discount">Descuento:</label>
+                    <input class="form__line" id="line-size3" type="number" name="discount" min="0" placeholder="10%">
+                    <label class="form__subtitle" for="instalment">Cuotas:</label>
+                    <select class="form__select" id="instalment" name="instalment">
+                        <option value="">3 Cuotas sin interés</option>
+                        <option value="" selected>6 Cuotas con interés</option>
+                        <option value="">12 Cuotas con interés</option>
+                    </select><br><br>
+                </section>
+                <section class="first__line">
+                    <label for="images">Imágenes:</label>
+                    <input type="file" id="file-upload" name="file-upload" accept="image/*"><br><br>
+                </section>
             </form>
             <section class="form__buttons">
                 <button class="form__button" id="left-button">Agregar producto</button>
