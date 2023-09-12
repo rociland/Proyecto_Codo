@@ -81,6 +81,13 @@ label {
     padding: var(--spacing-8);
 }
 
+.first__line {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: var(--spacing-20);
+}
+
 #left-button {
     margin-right: var(--spacing-20);
 }
@@ -91,7 +98,7 @@ label {
     background-color: var(--primary-solid);
     border: none;
     font-family: var(--base-font);
-    font-size: 14px;
+    font-size: var(--font-xsmall);
     font-weight: 600;
     color: var(--light-font-solid);
 }
