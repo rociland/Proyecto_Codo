@@ -424,3 +424,22 @@ input {
  padding:var(--spacing-128);
  text-align:center;
 }
+
+
+/* LOGIN*/
+
+.content__form  {
+    display: flex;
+    justify-content:stretch;
+    align-items:stretch;
+    font-size: large;
+    font-family: var(---alternative-fontt)
+
+}
+
+
+.content__form {
+display: flex;
+flex-direction: column;
+gap:(var(--spacing-0));
+}

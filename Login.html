@@ -44,39 +44,34 @@
             </ul>
         </nav>
     </header>
-    <main class="form__container">
-        <section>
-            <article>
-
-                <h3> INGRESAR A MI CUENTA </h3>
-         <form action="" method="GET">
-         <label> <p> Email: <input type="text" name="user"> </p></label>
-         <label> <p> Contraseña: <input type="password" name="password"></p> </label>
-
-        </form>
-
-    
-            </article>
+    <main class="main-container">
+        <section  class="content__form">
+        <h3 > INGRESAR A MI CUENTA </h3>
+         <form action="" method="GET" class="form__container">
+         <label > <p> Email:      <input type="text" name="user"> </p></label>
+         <label > <p> Contraseña: <input type="password" name="password"></p> </label>
+      </form>
+      <section>
+            
         </section class=contenedor>
         <input type="button" value="Ingresar" >
        <input type="checkbox" name="acepted" checked><label> Recordame </label>
-       <section>
     </main>
-    <footer>
-      
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./pages/shop.html">SHOP</a>
+    <footer class="footer">
+        <section>
+            <nav class="navbar container">
+                <ul class="navbar__item">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./pages/shop.html">SHOP</a>
                     </li>
-                    <li>
-                        <a href="./pages/register.html">REGISTRARSE</a>
+                    <li  class="navbar__item">
+                        <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
                     </li>
-                    <li>
-                        <a href="./pages/login.html">LOGIN</a>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./pages/login.html">LOGIN</a>
                     </li>
-                    <li>
-                        <a href="./pages/contact.html">CONTACTO</a>
+                    <li  class="navbar__item">
+                        <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>`
                     </li>
                 </ul>
                 <picture>
@@ -84,8 +79,9 @@
                 </picture>
             </nav>
         </section>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>
 

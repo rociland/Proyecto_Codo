@@ -84,10 +84,6 @@ p {
 }
 
 .container {
-<<<<<<< HEAD
-    max-width: 120px;
-=======
     max-width: 1200px;
->>>>>>> 9e8cb852db6011d6180ad172ff291c9e4808b324
     margin: 0 auto;
 }
