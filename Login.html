@@ -17,24 +17,13 @@
             </picture>
             <ul class="navbar__menu">
                 <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Funkos</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Remeras</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Llaveros</a>
-                        </li>
-                    </ul>
+                    <a class="navbar__link with-icon" href="./pages/shop.html">VER TIENDA</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/contact.html">CONTACTO</a>
+                    <a class="navbar__link" href="/pages/contact.html">ADMIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/admin/login.html">LOGIN</a>
+                    <a class="navbar__link" href="/pages/admin/login.html">SALIR</a>
                 </li>
                 <li class="navbar__item">
                     <a class="navbar__cart" href="/pages/shop/cart.html">
@@ -46,16 +35,28 @@
     </header>
     <main class="main-container">
         <section  class="content__form">
-        <h3 > INGRESAR A MI CUENTA </h3>
-         <form action="" method="GET" class="form__container">
-         <label > <p> Email:      <input type="text" name="user"> </p></label>
-         <label > <p> Contraseña: <input type="password" name="password"></p> </label>
-      </form>
-      <section>
-            
-        </section class=contenedor>
-        <input type="button" value="Ingresar" >
-       <input type="checkbox" name="acepted" checked><label> Recordame </label>
+            <h3 class="login-title"> INGRESAR A MI CUENTA </h3>
+            <form action="" method="GET" class="form__container">
+                <div class="contain-input">
+                    <div class="div-input">
+                        <p class="text"><label for="user"></label>Email:</p>
+                        <input type="text" name="user" class="login-input" placeholder="johndoe@correo.com"> 
+                    </div>
+                    <div class="div-input">
+                        <p class="text"><label for="user"></label>Contraseña:</p> 
+                        <input type="password" name="password" class="login-input" placeholder="••••••••"> 
+                    </div>
+                </div>
+                <div class="div-check">
+                    <input type="button" value="Ingresar" class="submit-btn">
+                    <div>
+                        <input type="checkbox" name="acepted" checked>
+                        <label class="check-label">Recordame</label>
+                    </div>
+                </div>
+            </form>
+            <a href="#" class="login-link">olvide mi contraseña</a>
+        </section>
     </main>
     <footer class="footer">
         <section>
