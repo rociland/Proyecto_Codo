@@ -48,10 +48,7 @@
     <main class="main container">
         <h2 class="cart__title">CARRITO DE COMPRAS</h2>
         <section class="collection container">
-            <section class="content__product">
-                <article class="collection__content">
-                    <h3 class="collection__title">DETALLE DE PRODUCTO</h3>
-                </article>
+            <section class="content__product_title"> DETALLE DE COMPRA </article>
             </section>
             <article class="collection__content">
                 <h3 class="collection__title">CANTIDAD</h3>
@@ -72,11 +69,20 @@
                 </article>
             </section>
             <article class="collection__content">
-                <p class="collection__text">
-                <input id="ticketNum" type="number" name="ticketNum" value="2"/>
-            </article>
+            <div class="cart__article__buy">
+                <input type="number" value="0" min="0" max="99"value="2"/>   
+            <div class="cart__article__buy__button">    
+                <iconify-icon icon="ph:plus-fill" style="color: #f24e1e;" width="18" height="16"></iconify-icon>
+                <iconify-icon icon="mdi:minus-box" style="color: #f24e1e;" width="18" height="16"></iconify-icon> 
+            </div>
+        </div>
+        </article>
+           
             <article class="collection__content">
                 <p class="collection__text"> $ 3599,98</p>
+            </article>
+            <article class="collection__content">
+                <p class="collection__text"><i class="fa-regular fa-circle-xmark fa-xl" style="color: #f24e1e;"></i></p>   
             </article>
         </section>
         <section class="collection container">
@@ -91,10 +97,19 @@
             </article>
         </section>
             <article class="collection__content">
-                <p class="collection__text">  <input id="ticketNum" type="number" name="ticketNum" value="1" /></p>
+                <div class="cart__article__buy">
+                  <input class="cart__article__buy__select" type="number" value="0" min="0" max="99">
+                <div class="cart__article__buy__button">    
+                    <iconify-icon icon="ph:plus-fill" style="color: #f24e1e;" width="18" height="16"></iconify-icon>
+                    <iconify-icon icon="mdi:minus-box" style="color: #f24e1e;" width="18" height="16"></iconify-icon> 
+                </div>
+            </div>
             </article>
             <article class="collection__content">
                 <p class="collection__text">$ 1799,99</p>
+            </article>
+            <article class="collection__content">
+                <p class="collection__text"><i class="fa-regular fa-circle-xmark fa-xl" style="color: #f24e1e;"></i></p>   
             </article>
         </section>
         <section class="content__resumen">
@@ -162,6 +177,7 @@
         <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    <script src="https://kit.fontawesome.com/03c9dd7ae6.js" crossorigin="anonymous"></script>
 </body>
 </body>
 </html>
