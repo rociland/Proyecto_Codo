@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/edit.css">
+    <title>Edit | Funkoshop</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="../index.html">
+                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./pages/shop.html">SHOP <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="./pages/cart.html">
+                        <img src="../../img/icons/cart-icon.svg" alt="icono de carrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main container">
+        <h2 class="title">EDITAR ITEM</h2>
+        <section class="form">
+            <form class="form__text" action="">
+                <label for="category">Categoría:</label>
+                <select class="form__select" id="category" name="category">
+                    <option value="" disabled selected style="display: none;">Seleccionar</option>
+                    <option value="" >Figuras</option>
+                </select>
+                <label class="form__subtitle" for="license">Licencia:</label>
+                <select class="form__select" id="license" name="license">
+                    <option value="" disabled selected style="display: none;">Seleccionar</option>
+                    <option value="">Naruto Shippuden</option>
+                </select><br><br>
+                <label for="productName">Nombre del producto:</label>
+                <input class="form__line" id="line-size" type="text" name="productName" placeholder="Kakashi Hatake Shippuden Saga"><br><br>
+                <textarea class="form__textarea" name="description" id="description" rows="6" cols="50" placeholder="Descripción del producto">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</textarea><br><br>
+                <section class="first__line">
+                    <label for="sku">SKU:</label>
+                    <input class="form__line" id="line-size2" type="text" name="sku" placeholder="NAR001012">
+                    <label class="form__subtitle" for="price">Precio:</label>
+                    <input class="form__line" id="line-size2" type="number" name="price" min="0" placeholder="$1.799,00">
+                    <label class="form__subtitle" for="stock">Stock:</label>
+                    <input class="form__line" id="line-size3" type="number" name="stock" min="0" placeholder="10"><br><br>
+                </section>
+                <section class="first__line">
+                    <label for="discount">Descuento:</label>
+                    <input class="form__line" id="line-size3" type="number" name="discount" min="0" placeholder="10%">
+                    <label class="form__subtitle" for="instalment">Cuotas:</label>
+                    <select class="form__select" id="instalment" name="instalment">
+                        <option value="">3 Cuotas sin interés</option>
+                        <option value="" selected>6 Cuotas con interés</option>
+                        <option value="">12 Cuotas con interés</option>
+                    </select><br><br>
+                </section>
+                <section class="first__line">
+                    <label for="images">Imágenes:</label>
+                    <input type="file" id="file-upload" name="file-upload" accept="image/*"><br><br>
+                </section>
+            </form>
+            <section>
+                <button class="form__button">Modificar Producto</button>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
+                <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+            </picture>
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+</body>
+</html>
