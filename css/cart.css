@@ -275,7 +275,20 @@ svg {
 
     /* botones*/
 
-    .item__quantity { 
+    .item__quantity1 { 
+        border-radius: 0%;
+        color:#FFFFFF;
+        background:#F24E1E;
+        width: 19px;
+        height: 19px;
+        border-color: #F24E1E;
+        margin: 1px;
+        padding: 0;
+
+
+    }
+
+    .item__quantity2 { 
         border-radius: 0%;
         color:#FFFFFF;
         background:#F24E1E;
