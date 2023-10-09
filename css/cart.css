@@ -272,3 +272,18 @@ svg {
         font-weight: 700;
         text-align: right;
     }
+
+    /* botones*/
+
+    .item__quantity { 
+        border-radius: 0%;
+        color:#FFFFFF;
+        background:#F24E1E;
+        width: 19px;
+        height: 19px;
+        border-color: #F24E1E;
+        margin: 1px;
+        padding: 0;
+
+
+    }
