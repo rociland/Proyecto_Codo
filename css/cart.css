@@ -300,3 +300,94 @@ svg {
 
 
     }
+
+    .cuadroresumen {
+        display: flex;
+        width: 572px; /* Ancho total deseado */
+      height: 197px; /* Alto total deseado */
+      margin-left:630px ;
+      color: #747474;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      gap: var(--spacing-20);
+      padding: var(--spacing-12);
+
+    }
+  
+      .ladoizquierdo {
+        flex: 1; /* La columna se expandirá para ocupar todo el espacio disponible */
+        box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto totales */
+        padding: 20px; /* Ajusta el espacio interno según tus necesidades */
+        border: 1px; /* Añade un borde para visualizar las columnas */
+        margin-left: auto;
+        color: #000000;
+        gap: var(--spacing-20);
+        padding: var(--spacing-12);
+        font-family: var(--base-font);
+        font-size: var( --font-xsmall);
+        text-align: left;
+        
+    }
+      .ladoderecho {
+        flex: 1; /* La columna se expandirá para ocupar todo el espacio disponible */
+        box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto totales */
+        padding: 20px; /* Ajusta el espacio interno según tus necesidades */
+        border: 1px; /* Añade un borde para visualizar las columnas */
+        margin-left: auto;
+        color: #747474;
+        gap: var(--spacing-20);
+        padding: var(--spacing-12);
+        text-align: right;
+       
+    }
+      .ladoderecho:last-child {
+        margin-right: auto; /* Mueve la primera columna hacia la derecha */
+      }
+      .ladoderecho h2 {
+        border-top: 2px solid #FF3333; /* Agrega una línea naranja en la parte superior del h2 */
+        padding-top: 0px; /* Ajusta el espacio según tus preferencias */
+        margin-top: 0px; /* Ajusta el margen superior para que las líneas se unan */
+        font-size: 18px; 
+        font-weight: 600; 
+        text-align: right;
+      }
+      .ladoizquierdo h2 {
+        border-top: 2px solid #FF3333; /* Agrega una línea naranja en la parte superior del h2 */
+        padding-top: 0px; /* Ajusta el espacio según tus preferencias */
+        margin-top: 0px; /* Ajusta el margen superior para que las líneas se unan */
+        line-height: 1.5;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+
+        .ladoderecho p {
+            flex: 1; /* La columna se expandirá para ocupar todo el espacio disponible */
+            box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto totales */
+            padding: 20px; /* Ajusta el espacio interno según tus necesidades */
+            border: 1px; /* Añade un borde para visualizar las columnas */
+            margin-left: auto;
+            color: #747474;
+            gap: var(--spacing-20);
+            padding: var(--spacing-12);
+            font-size: 16px;
+            font-weight: 600;
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        .ladoizquierdo p {
+            flex: 1; /* La columna se expandirá para ocupar todo el espacio disponible */
+            box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto totales */
+            padding: 20px; /* Ajusta el espacio interno según tus necesidades */
+            border: 1px; /* Añade un borde para visualizar las columnas */
+            margin-left: auto;
+            color: #000000;
+            gap: var(--spacing-20);
+            padding: var(--spacing-12);
+            font-size: 16px;
+            font-weight: 600;
+            text-align: left;
+            
+        }
