@@ -1,0 +1,84 @@
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.item__article {
+    display: flex;
+    flex-direction: column;
+    max-width: 55rem;
+    min-width: 40rem;
+    gap: var(--spacing-12);
+}
+
+.item__article__from {
+    font-weight: 500;
+    font-size: var(--font-small);
+}
+
+.item__article__title {
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+}
+
+.item__article__description {
+    font-size: var(--font-large);
+}
+
+.item__article__price {
+    font-size: var(--font-jumbo);
+}
+
+.item__article__buy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-36);
+}
+
+.item__article__buy__select {
+    color: var(--dark-500);
+    font-size: var(--font-xlarge);
+    text-align: center;
+    padding: 0 var(--spacing-12);
+}
+
+/*? Elimino las botones de incremento y decremento en el select */
+.item__article__buy__select::-webkit-inner-spin-button {
+    display: none;
+}
+
+.item__article__buy__button {
+    position: relative;
+    flex-direction: column;
+    display: inline-flex;
+}
+
+.item__article__buy__cart {
+    font-size: var(--font-medium);
+    color: var(--light-bd-solid);
+    background-color: var(--primary-solid);
+    padding: var(--spacing-12) var(--spacing-16);
+    border: none;
+    transition: background-color .2s ease-in-out;
+}
+
+.item__article__buy__cart:hover {
+    background-color: var(--primary-900);
+}
+
+.item__article__link {
+    font-weight: 700;
+    font-size: var(--font-xsamll);
+    color: var(--secondary-solid);
+}
+
+.item__article__link span{
+    text-decoration: underline;
+}
+
+
+.item__article__picture {
+    order: -1;
+    min-width: 55rem;
+}

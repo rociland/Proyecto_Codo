@@ -1,0 +1,130 @@
+main {
+    padding: var(--spacing-12);
+}
+
+.title {
+    padding: var(--spacing-28) 0 var(--spacing-16);
+    font-family: var(--alternative-font);
+    font-weight: 700;
+    font-size: var(--font-jumbo);
+}
+
+.form {
+    padding: var(--spacing-20) 0;
+}
+
+.form__text label {
+    font-size: var(--font-large);
+}
+
+label {
+    padding-right: var(--spacing-12);
+}
+
+.form__select {
+    padding: var(--spacing-8) var(--spacing-68);
+    border: 2px solid var(--dark-bg-solid);
+    border-radius: 6px;
+    padding-left: var(--spacing-8);
+    font-size: var(--font-medium);
+    color: var(--dark-solid);
+}
+
+.form__subtitle {
+    padding-left: var(--spacing-28);
+}
+
+.form__line {
+    font-size: var(--font-medium);    
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--primary-solid);
+    padding: 0;
+}
+
+.form__line::placeholder {
+    color: var(--dark-solid);
+}
+
+#line-size {
+    width: 270px;
+}
+
+#line-size2{
+    width: 130px;
+}
+
+#line-size3{
+    width: 55px;
+}
+
+#line-size3::placeholder {
+    text-align: right;
+}
+
+#instalment {
+    padding: var(--spacing-8) var(--spacing-24) var(--spacing-8) var(--spacing-8);
+    text-align: start;
+}
+
+.form__textarea {
+    padding: var(--spacing-8);
+    min-width: 70%;
+    resize: none;
+    border: 1px solid var(--dark-solid);
+    border-radius: 4px;
+    font-family: var(--base-font);
+}
+
+.form__textarea::placeholder {
+    font-size: var(--font-medium);
+    color: var(--light-bd-solid);
+    padding: var(--spacing-8);
+}
+
+.first__line {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: var(--spacing-20);
+}
+
+.form__button {        
+    background-color: var(--primary-solid);
+    border: none;
+    padding: var(--spacing-12) var(--spacing-20);
+    font-size: var(--font-xsmall);
+    font-weight: 600;
+    color: var(--light-font-solid);
+}
+
+.form__funkopop {
+    width: 150px;
+    height: 173px;
+    display: flex;
+    margin-bottom: var(--spacing-36);
+}
+
+.form__funkos {
+    width: 150px;
+    height: 150px;
+}
+
+#funko1 {
+    border-bottom: 1px solid var(--primary-solid);
+    width: 150px;
+    margin-right: var(--spacing-20);
+}
+
+#funko2 {
+    border-bottom: 1px solid var(--primary-solid);
+}
+
+.form__photos-text {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    font-family: var(--alternative-font);
+    font-size: 20px;
+    font-weight: 500;
+}
