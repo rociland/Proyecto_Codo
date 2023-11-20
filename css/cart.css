@@ -1,0 +1,393 @@
+.grid-container {
+    display: grid;
+    grid-template-columns:  1fr  1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.cart__title {
+    width: 506px;
+    height: 62px;
+    color: #111111;
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 700;
+    border-bottom: 5px solid var(--primary-solid);
+    margin-top: var(--spacing-68);
+    margin-bottom: var(--spacing-36);
+}
+
+.grid-container-resumen {
+    display: grid;
+    grid-template-columns:  1fr  1fr;
+    grid-template-rows: 1fr 1f;
+    text-align: right;
+    padding: 0%;
+}
+
+.container__baby {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: right;
+}
+
+
+.img.cart {
+    float: left;
+}
+
+.resumen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+input { 
+    text-align: center;
+    font-size: var(--font-small);
+    font-weight: 700;
+    width: 113px;
+    height: 40px;
+}
+
+input { 
+    text-align: center;
+    font-size: var(--font-small);
+    font-weight: 700;
+    width: 113px;
+    height: 40px;
+
+}
+
+antity-button {
+    position: relative;
+    cursor: pointer;
+    border-left: 1px solid #eee;
+    width: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+    line-height: 1.7;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+
+
+    
+.with-icon {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+
+.collection__title {
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    font-weight: 700;
+    text-align: left;
+}
+
+.collection__text {
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    font-weight: 400;
+    border-bottom: none;
+}
+
+.collection { 
+    width: 1220px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    border-color: var(--light-bg-solid);
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    background: var(--light-bg-solid);
+    padding-bottom: var(--spacing-20);
+    margin: var(--spacing-20);
+    margin-left: 0;
+    justify-items: center;
+}
+
+#collection__container_first {
+    height: 51px;
+    border-radius: 10px;
+}
+        
+.collection__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0px;
+}
+
+.content__product { 
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    align-items: center;
+}
+
+.content__resumen1 { 
+    height: 197px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: left;
+    border-color: var(--light-bg-solid);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    background: var(--light-bg-solid);
+    margin: var(--spacing-20);
+    padding: var(--spacing-8);
+    margin-right: 0;
+    text-align: center;
+}
+
+
+.content__resumen2 { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: right;
+    padding-right: 0;
+}
+
+.content__resumen {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: right;
+}
+
+.content__resumen {
+    display: flex;
+    justify-content: right;
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    font-weight: 400;
+}
+   
+.resumen__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-0);
+    padding-top: var(--spacing-28);
+}
+
+.resumen__text {
+    font-family: var(--base-font);
+    font-size: var(--font-xlarge);
+    font-weight: 700;
+    border-bottom: 5px solid var(--primary-solid);
+    text-transform: uppercase; 
+}
+ 
+.collection__resumen {
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    font-weight: 600;
+    text-align:right;
+    margin: 0%;
+    padding: 0%;
+   
+}
+
+.cart__button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#collection__resumen_left {    
+    justify-items: left;
+    color: var(--dark-solid);
+}
+
+.collection__content_resumen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-20);
+    padding: var(--spacing-12);
+    color: #747474;
+    align-items: center;
+    text-align: center;
+ }
+   
+
+.resumen__button {
+    width: 572px;
+    height: 68.66px;
+    color: var(--light-font-solid);
+    background-color: var(--primary-solid);
+    border: none;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: var(--spacing-16);
+    margin-bottom: var(--spacing-68);
+    transition: background .3s ease-in-out;
+}
+
+.resumen__button:hover {
+    background-color: var(--dark-solid);
+}
+
+.quantity {
+    position: relative;
+    position: relative;
+    flex-direction: column;
+    display: inline-flex;
+}
+
+span,
+svg {
+  display:block;
+}
+
+.cart__article__buy__button {
+    position: relative;
+    flex-direction: column;
+    display: inline-flex;
+}
+
+.cart__article__buy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-0);
+}
+
+#collection__content__tittle {
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    font-weight: 700;
+    text-align: center;}
+
+.content__product_title { 
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+        font-family: var(--base-font);
+        font-size: var(--font-small);
+        font-weight: 700;
+        text-align: right;
+    }
+
+    /* botones*/
+
+    .item__quantity1 { 
+        border-radius: 0%;
+        color:#FFFFFF;
+        background:#F24E1E;
+        width: 19px;
+        height: 19px;
+        border-color: #F24E1E;
+        margin: 1px;
+        padding: 0;
+
+
+    }
+
+    .item__quantity2 { 
+        border-radius: 0%;
+        color:#FFFFFF;
+        background:#F24E1E;
+        width: 19px;
+        height: 19px;
+        border-color: #F24E1E;
+        margin: 1px;
+        padding: 0;
+
+
+    }
+
+    .cuadroresumen {
+        display: flex;
+        width: 572px; /* Ancho total deseado */
+      height: 197px; /* Alto total deseado */
+      margin-left:630px ;
+      color: #747474;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      gap: var(--spacing-20);
+      padding: var(--spacing-12);
+
+    }
+  
+      .ladoizquierdo {
+        flex: 1; /* La columna se expandirá para ocupar todo el espacio disponible */
+        box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto totales */
+        padding: 20px; /* Ajusta el espacio interno según tus necesidades */
+        border: 1px; /* Añade un borde para visualizar las columnas */
+        margin-left: auto;
+        color: #000000;
+        gap: var(--spacing-20);
+        padding: var(--spacing-12);
+        font-family: var(--base-font);
+        font-size: var( --font-xsmall);
+        text-align: left;
+        
+    }
+      .ladoderecho {
+        flex: 1; /* La columna se expandirá para ocupar todo el espacio disponible */
+        box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto totales */
+        padding: 20px; /* Ajusta el espacio interno según tus necesidades */
+        border: 1px; /* Añade un borde para visualizar las columnas */
+        margin-left: auto;
+        color: #747474;
+        gap: var(--spacing-20);
+        padding: var(--spacing-12);
+        text-align: right;
+       
+    }
+      .ladoderecho:last-child {
+        margin-right: auto; /* Mueve la primera columna hacia la derecha */
+      }
+      .ladoderecho h2 {
+        border-top: 2px solid #FF3333; /* Agrega una línea naranja en la parte superior del h2 */
+        padding-top: 0px; /* Ajusta el espacio según tus preferencias */
+        margin-top: 0px; /* Ajusta el margen superior para que las líneas se unan */
+        font-size: 18px; 
+        font-weight: 600; 
+        text-align: right;
+      }
+      .ladoizquierdo h2 {
+        border-top: 2px solid #FF3333; /* Agrega una línea naranja en la parte superior del h2 */
+        padding-top: 0px; /* Ajusta el espacio según tus preferencias */
+        margin-top: 0px; /* Ajusta el margen superior para que las líneas se unan */
+        line-height: 1.5;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+
+        .ladoderecho p {
+            flex: 1; /* La columna se expandirá para ocupar todo el espacio disponible */
+            box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto totales */
+            padding: 20px; /* Ajusta el espacio interno según tus necesidades */
+            border: 1px; /* Añade un borde para visualizar las columnas */
+            margin-left: auto;
+            color: #747474;
+            gap: var(--spacing-20);
+            padding: var(--spacing-12);
+            font-size: 16px;
+            font-weight: 600;
+            justify-content: flex-end;
+            text-align: right;
+        }
+
+        .ladoizquierdo p {
+            flex: 1; /* La columna se expandirá para ocupar todo el espacio disponible */
+            box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto totales */
+            padding: 20px; /* Ajusta el espacio interno según tus necesidades */
+            border: 1px; /* Añade un borde para visualizar las columnas */
+            margin-left: auto;
+            color: #000000;
+            gap: var(--spacing-20);
+            padding: var(--spacing-12);
+            font-size: 16px;
+            font-weight: 600;
+            text-align: left;
+            
+        }
