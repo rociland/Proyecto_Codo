@@ -22,4 +22,3 @@ subtract2.addEventListener('click', () =>  {
         quantity2.value = 0
     }
 }) ;
-
