@@ -31,11 +31,13 @@
     <main class="main container">
         <h2 class="title">CREAR NUEVO ITEM</h2>
         <section class="form">
-            <form class="form__text" action="">
+            <form class="form__text" action="/admin/create" method="POST">
                 <label for="category">Categoría:</label>
                 <select class="form__select" id="category" name="category">
-                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="" disabled selected hidden>Seleccionar</option>
                     <option value="figures">Figuras</option>
+                    <option value="shirts">Remeras</option>
+                    <option value="keychains">Llaveros</option>
                 </select>
                 <label class="form__subtitle" for="license">Licencia:</label>
                 <select class="form__select" id="license" name="license">
