@@ -107,14 +107,6 @@ left: 738.65px;
    color: #1D84B5;
     
 }
- /* #offer{
-    align-items: center;
-    margin: auto; 
-}
-.tyc{
-    color: aqua;
-    font-size: 10px;
-} */
 
 
 .div-check { 
@@ -139,18 +131,3 @@ left: 738.65px;
     font-size: 18px;
     font-weight: 400;
 }
-/* FIN- CSS REGISTER-BM */
-
-
-/* --------------------------------------------------------------------------FOOTER */
-
-.footer {
-    background-color: var(--dark-bg-solid);
-    padding: var(--spacing-68);
-}
-
-.footer__copy {
-    margin-top: var(--spacing-36);
-    text-align: center;
-}
- 
