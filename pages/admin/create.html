@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/index.css">
     <link rel="stylesheet" href="../../css/create.css">
-    <title>CREATE</title>
+    <title>Create | Funkoshop</title>
 </head>
 <body>
     <header>
@@ -31,29 +31,29 @@
     <main class="main container">
         <h2 class="title">CREAR NUEVO ITEM</h2>
         <section class="form">
-            <form class="form__text" action="/admin/create" method="POST">
-                <label for="category">Categoría:</label>
-                <select class="form__select" id="category" name="category">
+            <form class="form__text" action="/admin/save" method="POST" enctype="application/x-www-form-urlencoded">
+                <label for="category_name">Categoría:</label>
+                <select class="form__select" id="category" name="category_name">
                     <option value="" disabled selected hidden>Seleccionar</option>
-                    <option value="figures">Figuras</option>
-                    <option value="shirts">Remeras</option>
+                    <option value="figures">Figuras Coleccionables</option>
                     <option value="keychains">Llaveros</option>
+                    <option value="shirts">Remeras</option>
                 </select>
-                <label class="form__subtitle" for="license">Licencia:</label>
-                <select class="form__select" id="license" name="license">
+                <label class="form__subtitle" for="licence_name">Licencia:</label>
+                <select class="form__select" id="licence" name="licence_name">
                     <option value="" disabled selected>Seleccionar</option>
                     <option value="">Star Wars</option>
                     <option value="">Pokemon</option>
                     <option value="">Harry Potter</option>
                 </select><br><br>
-                <label for="productName">Nombre del producto:</label>
-                <input class="form__line" id="line-size" type="text" name="productName" placeholder="Kakashi Hatake Shippuden Saga"><br><br>
-                <textarea class="form__textarea" name="description" id="description" rows="6" cols="50" placeholder="Descripción del producto"></textarea><br><br>
+                <label for="product_name">Nombre del producto:</label>
+                <input class="form__line" id="line-size" type="text" name="product_name" placeholder="Kakashi Hatake Shippuden Saga"><br><br>
+                <textarea class="form__textarea" name="product_description" id="description" rows="6" cols="50" placeholder="Descripción del producto"></textarea><br><br>
                 <section class="first__line">
-                    <label for="sku">SKU:</label>
-                    <input class="form__line" id="line-size2" type="text" name="sku" placeholder="NAR001012">
-                    <label class="form__subtitle" for="price">Precio:</label>
-                    <input class="form__line" id="line-size2" type="number" name="price" min="0" placeholder="$1.799,00">
+                    <label for="product_sku">SKU:</label>
+                    <input class="form__line" id="line-size2" type="text" name="product_sku" placeholder="NAR001012">
+                    <label class="form__subtitle" for="product_price">Precio:</label>
+                    <input class="form__line" id="line-size2" type="number" name="product_price" min="0" placeholder="$1.799,00">
                     <label class="form__subtitle" for="stock">Stock:</label>
                     <input class="form__line" id="line-size3" type="number" name="stock" min="0" placeholder="10"><br><br>
                 </section>
@@ -68,15 +68,15 @@
                     </select><br><br>
                 </section>
                 <section class="first__line">
-                    <label for="images">Imágenes:</label>
+                    <label for="img_front">Imágenes:</label>
                     <input type="file" id="file-upload" name="file-upload" accept="image/*"><br><br>
                 </section>
+                <div class="form__buttons">
+                    <button class="form__button" id="left-button" type="submit">Agregar producto</button>
+                    <button class="form__button" type="reset">Limpiar</button>
+                </div>    
             </form>
-            <section class="form__buttons">
-                <button class="form__button" id="left-button">Agregar producto</button>
-                <button class="form__button">Limpiar</button>
-            </section>
-        </section>
+        </section>            
     </main>
     <footer class="footer">
             <nav class="navbar container">

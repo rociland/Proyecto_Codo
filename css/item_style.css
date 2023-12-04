@@ -36,15 +36,16 @@
     gap: var(--spacing-36);
 }
 
-.item__article__buy__select {
+.item__quantity {
     color: var(--dark-500);
     font-size: var(--font-xlarge);
     text-align: center;
     padding: 0 var(--spacing-12);
+    outline: var(--dark-bg-solid);
 }
 
 /*? Elimino las botones de incremento y decremento en el select */
-.item__article__buy__select::-webkit-inner-spin-button {
+.item__quantity::-webkit-inner-spin-button {
     display: none;
 }
 
@@ -54,17 +55,22 @@
     display: inline-flex;
 }
 
+.item__article__buy__button button {
+    border: none;
+    background-color: transparent;
+}
+
 .item__article__buy__cart {
     font-size: var(--font-medium);
-    color: var(--light-bd-solid);
+    color: var(--light-font-solid);
     background-color: var(--primary-solid);
     padding: var(--spacing-12) var(--spacing-16);
     border: none;
-    transition: background-color .2s ease-in-out;
 }
 
 .item__article__buy__cart:hover {
-    background-color: var(--primary-900);
+    transition: background .3s ease-in-out;
+    background-color: var(--dark-solid);
 }
 
 .item__article__link {

@@ -55,6 +55,7 @@
 .check-label{
     font-size: 18px;
     font-weight: 400;
+    padding-left: var(--spacing-16);
 }
 .login-link{
     font-size: 14px;
