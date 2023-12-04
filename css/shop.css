@@ -41,6 +41,11 @@
     width: 960px;
 }
 
+.slider__items {
+    display: flex;
+    gap: var(--spacing-24);
+}
+
 .pagination__list {
     display: flex;
     flex-direction: row;

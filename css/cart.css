@@ -173,7 +173,7 @@ antity-button {
 .resumen__content {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-0);
+    margin-bottom: var(--spacing-28);
     padding-top: var(--spacing-28);
 }
 
@@ -276,12 +276,11 @@ svg {
     /* botones*/
 
     .item__quantity1 { 
-        border-radius: 0%;
         color:#FFFFFF;
         background:#F24E1E;
         width: 19px;
         height: 19px;
-        border-color: #F24E1E;
+        border: none;
         margin: 1px;
         padding: 0;
 
@@ -289,71 +288,66 @@ svg {
     }
 
     .item__quantity2 { 
-        border-radius: 0%;
         color:#FFFFFF;
         background:#F24E1E;
         width: 19px;
         height: 19px;
-        border-color: #F24E1E;
+        border: none;
         margin: 1px;
         padding: 0;
-
-
     }
 
     .cuadroresumen {
-        display: flex;
-        width: 572px; /* Ancho total deseado */
-      height: 197px; /* Alto total deseado */
+      display: flex;
+      width: 572px; 
+      height: 197px; 
       margin-left:630px ;
-      color: #747474;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+      background: var(--light-bg-solid);
       box-sizing: border-box;
-      border: 1px solid #ccc;
       padding: var(--spacing-12);
-
+      margin-bottom: var(--spacing-20);
     }
+
   
       .ladoizquierdo {
-        flex: 1; /* La columna se expandirá para ocupar todo el espacio disponible */
-        box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto totales */
-        padding: 20px; /* Ajusta el espacio interno según tus necesidades */
-        border: 1px; /* Añade un borde para visualizar las columnas */
+        flex: 1; 
+        box-sizing: border-box; 
+        border: 1px; 
         margin-left: auto;
         color: #000000;
         gap: var(--spacing-20);
-        padding: 0;
         font-family: var(--base-font);
         font-size: var( --font-xsmall);
         text-align: left;
-        
     }
       .ladoderecho {
-        flex: 1; /* La columna se expandirá para ocupar todo el espacio disponible */
-        box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto totales */
-        padding: 20px; /* Ajusta el espacio interno según tus necesidades */
-        border: 1px; /* Añade un borde para visualizar las columnas */
+        flex: 1; 
+        box-sizing: border-box; 
+        border: 1px; 
         margin-left: auto;
         color: #747474;
         gap: var(--spacing-20);
-        padding:0;
         text-align: right;
-       
     }
       .ladoderecho:last-child {
-        margin-right: auto; /* Mueve la primera columna hacia la derecha */
+        margin-right: auto; 
       }
       .ladoderecho h2 {
-        border-top: 2px solid #FF3333; /* Agrega una línea naranja en la parte superior del h2 */
-        padding-top: 0px; /* Ajusta el espacio según tus preferencias */
-        margin-top: 0px; /* Ajusta el margen superior para que las líneas se unan */
+        border-top: 2px solid #FF3333; 
+        padding-top: var(--spacing-8);
+        padding-right: var(--spacing-8); 
+        margin-top: 0px; 
         font-size: 18px; 
         font-weight: 600; 
         text-align: right;
       }
       .ladoizquierdo h2 {
-        border-top: 2px solid #FF3333; /* Agrega una línea naranja en la parte superior del h2 */
-        padding-top: 0px; /* Ajusta el espacio según tus preferencias */
-        margin-top: 0px; /* Ajusta el margen superior para que las líneas se unan */
+        border-top: 2px solid #FF3333; 
+        padding-top: var(--spacing-8);
+        padding-left: var(--spacing-8); 
+        margin-top: 0px; 
         line-height: 1.5;
         font-size: 18px;
         font-weight: 700;
@@ -362,10 +356,10 @@ svg {
 
 
         .ladoderecho p {
-            flex: 1; /* La columna se expandirá para ocupar todo el espacio disponible */
-            box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto totales */
-            padding: 20px; /* Ajusta el espacio interno según tus necesidades */
-            border: 1px; /* Añade un borde para visualizar las columnas */
+            flex: 1; 
+            box-sizing: border-box; 
+            padding: 20px; 
+            border: 1px; 
             margin-left: auto;
             color: #747474;
             gap: var(--spacing-20);
@@ -377,10 +371,10 @@ svg {
         }
 
         .ladoizquierdo p {
-            flex: 1; /* La columna se expandirá para ocupar todo el espacio disponible */
-            box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto totales */
-            padding: 20px; /* Ajusta el espacio interno según tus necesidades */
-            border: 1px; /* Añade un borde para visualizar las columnas */
+            flex: 1;
+            box-sizing: border-box;
+            padding: 20px; 
+            border: 1px; 
             margin-left: auto;
             color: #000000;
             gap: var(--spacing-20);

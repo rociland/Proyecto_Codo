@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/login.css">
     <link rel="stylesheet" href="../../css/index.css">
-    <title>Login | Funkoshop</title>
+    <link rel="stylesheet" href="../../css/register.css">
+    <title>Register | Funkoshop</title>
 </head>
 <body>
     <header>
@@ -31,44 +31,57 @@
     </header>
     <main class="main-container">
         <section  class="content__form">
-            <h3 class="login-title"> INGRESAR A MI CUENTA </h3>
+            <h3 class="login-title"> CREA TU CUENTA </h3>
+            <span class="texto-login">Completa el formulario para ser parte del mundo de los Funkos</span>
             <form action="" method="GET" class="form__container">
                 <div class="contain-input">
                     <div class="div-input">
-                        <p class="text"><label for="user"></label>Email:</p>
-                        <input type="text" name="user" class="login-input" placeholder="johndoe@correo.com"> 
+                        <p class="text"><label for="user"></label>Nombre:</p>
+                        <input type="text" name="user-nombre" class="login-input" placeholder="John"> 
                     </div>
                     <div class="div-input">
+                        <p class="text"><label for="user"></label>Apellido:</p>
+                        <input type="text" name="user-apellido" class="login-input" placeholder="Doe"> 
+                    </div>
+                    <div class="div-input">
+                        <p class="text"><label for="user"></label>Email:</p>
+                        <input type="email" name="e-mail" class="login-input" placeholder="johndoe@correo.com"> 
+                    </div>
+                    <div class="div-input div-input-contraseña">
                         <p class="text"><label for="user"></label>Contraseña:</p> 
-                        <input type="password" name="password" class="login-input" placeholder="••••••••"> 
+                        <input type="password" name="password" class="login-input login-input-contraseña" placeholder="• • • • • • • •"> 
+                    </div>
+                    <div class="div-input">
+                        <p class="text"><label for="user"></label>Repita Contraseña:</p> 
+                        <input type="password" name="password" class="login-input login-input-contraseña" placeholder="• • • • • • • •"> 
+                    </div>
                     </div>
                 </div>
                 <div class="div-check">
-                    <input type="button" value="Ingresar" class="submit-btn">
-                    <div>
-                        <input type="checkbox" name="acepted">
-                        <label class="check-label">Recordame</label>
+                    <input type="button" value="Registrar" class="submit-btn">
+                    <div class="check">
+                        <input type="checkbox" name="acepted" class="btn-checkbox">
+                        <label class="check-label"> Acepto <span class="aceptar_tyc">términos y condiciones</span> </label>
                     </div>
                 </div>
             </form>
-            <a href="#" class="login-link">Olvidé mi contraseña</a>
         </section>
     </main>
     <footer class="footer">
         <section>
-            <nav class="navbar container">
+            <nav class="navbar ">
                 <ul class="navbar__item">
                     <li class="navbar__item">
                         <a class="navbar__link" href="../shop/shop.html">SHOP</a>
                     </li>
                     <li  class="navbar__item">
-                        <a class="navbar__link" href="./register.html">REGISTRARSE</a>
+                        <a class="navbar__link" href="register.html">REGISTRARSE</a>
                     </li>
                     <li class="navbar__item">
-                        <a class="navbar__link" href="./login.html">LOGIN</a>
+                        <a class="navbar__link" href="login.html">LOGIN</a>
                     </li>
                     <li  class="navbar__item">
-                        <a class="navbar__link" href="./contact.html">CONTACTO</a>
+                        <a class="navbar__link" href="">CONTACTO</a>
                     </li>
                 </ul>
                 <picture>
@@ -80,5 +93,5 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
-</html>
 
+</html>
