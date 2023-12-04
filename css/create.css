@@ -98,9 +98,14 @@ label {
     background-color: var(--primary-solid);
     border: none;
     font-family: var(--base-font);
-    font-size: var(--font-xsmall);
+    font-size: 14px;
     font-weight: 600;
     color: var(--light-font-solid);
+    transition: background .3s ease-in-out;
+}
+
+.form__button:hover {
+    background-color: var(--dark-solid);
 }
 
 .form__buttons {

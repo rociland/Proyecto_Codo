@@ -52,10 +52,10 @@
                 <p class="item__article__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
                 <p class="item__article__price">$1799,99</p>
                 <div class="item__article__buy">
-                    <input class="item__article__buy__select" type="number" value="0" min="0" max="99">
+                    <input class="item__quantity" type="number" name="quantity" id="quantity" value="0" min="0" max="99" readonly>
                     <div class="item__article__buy__button">
-                            <iconify-icon icon="ph:plus-fill" style="color: rgba(79, 79, 79, 1);" width="23" height="23"></iconify-icon>
-                        <iconify-icon icon="ph:minus-fill" style="color: rgba(79, 79, 79, 1);" width="23" height="23"></iconify-icon>
+                        <button id="add"><iconify-icon icon="ph:plus-fill" style="color: rgba(79, 79, 79, 1);" width="23" height="23"></iconify-icon></button>
+                        <button id="substract"><iconify-icon icon="ph:minus-fill" style="color: rgba(79, 79, 79, 1);" width="23" height="23"></iconify-icon></button>
                     </div>
                     <button class="item__article__buy__cart" type="button">Agregar al Carrito</button>
                 </div>
@@ -132,7 +132,7 @@
         <nav class="navbar container">
             <ul class="navbar__item">
                 <li class="navbar__item">
-                    <a class="navbar__link" href="../shop/shop.html">SHOP</a>
+                    <a class="navbar__link" href="./shop.html">SHOP</a>
                 </li>
                 <li class="navbar__item">
                     <a class="navbar__link" href="../admin/login.html">INGRESAR</a>
@@ -151,5 +151,6 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="../../js/glide.js"></script>
+    <script src="../../js/item.js"></script>
 </body>
 </html>
