@@ -71,6 +71,8 @@ label {
     height: 194px;
     border: 1px solid var(--dark-solid);
     border-radius: 4px;
+    font-family: var(--base-font);
+    font-size: 18px;
 }
 
 .form__textarea::placeholder {

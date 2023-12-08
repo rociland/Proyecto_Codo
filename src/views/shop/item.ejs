@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/item_style.css">
+    <title>Item | Funkoshop</title>
+</head>
+<body>
+    <%- include('../partials/header')%>
+    <main>
+        <section class="item container">
+            <article class="item__article">
+                <p class="item__article__from">STAR WARS</p>
+                <h3 class="item__article__title">BABY YODA BLUEBALL</h3>
+                <p class="item__article__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
+                <p class="item__article__price">$1799,99</p>
+                <div class="item__article__buy">
+                    <input class="item__quantity" type="number" name="quantity" id="quantity" value="0" min="0" max="99" readonly>
+                    <div class="item__article__buy__button">
+                        <button id="add"><iconify-icon icon="ph:plus-fill" style="color: rgba(79, 79, 79, 1);" width="23" height="23"></iconify-icon></button>
+                        <button id="substract"><iconify-icon icon="ph:minus-fill" style="color: rgba(79, 79, 79, 1);" width="23" height="23"></iconify-icon></button>
+                    </div>
+                    <a href="/shop/cart"><button class="item__article__buy__cart" type="button">Agregar al Carrito</button></a>
+                </div>
+                <a class="item__article__link" href="../pages/shop.html"><span>Ver métodos de pago</span> - 3 CUOTAS SIN INTERÉS</a>
+            </article>
+            <picture class="item__article__picture">
+                <img src="/img/star-wars/baby-yoda-1.webp" alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
+            </picture>
+        </section>
+    <%- include('../partials/slider')%>
+    </main>
+    <%- include('../partials/footer')%>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="../../js/glide.js"></script>
+    <script src="../../js/item.js"></script>
+</body>
+</html>

@@ -12,6 +12,10 @@
 .form__textarea {
     width: 1012.06px;
     height: 194.83px;
+    color: var(--dark-bg-solid);
+    font-family: var(--base-font);
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .form__textarea::placeholder {

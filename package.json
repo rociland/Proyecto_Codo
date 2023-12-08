@@ -2,11 +2,11 @@
   "name": "proyecto_codo",
   "version": "1.0.0",
   "description": "Proyecto de Codo a Codo",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js",
-    "start": "node app.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
