@@ -85,3 +85,9 @@ td {
     width: 34px;
     height: 34px;
 }
+
+.button_admin {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
