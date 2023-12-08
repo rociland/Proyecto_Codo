@@ -83,8 +83,7 @@
     text-decoration: underline;
 }
 
-
-.item__article__picture {
+.item__img {
     order: -1;
     min-width: 55rem;
 }
