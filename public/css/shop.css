@@ -43,6 +43,7 @@
 
 .slider__items {
     display: flex;
+    /* flex-direction: row; */
     gap: var(--spacing-24);
 }
 

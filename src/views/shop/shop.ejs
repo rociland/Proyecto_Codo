@@ -45,11 +45,32 @@
             </form>
         </aside>
         <section class="list">
-            <% characters.forEach(character => { %>
-                <a href="#"><%= character.licence_name %></a>
-                <% console.log(character); %>
-               <% }); %>
-            %>
+            <section class="slider container">
+                <% characters.forEach(character =>{ %>
+                    <ul class="slider__items">
+                        <% characters.forEach(character =>{ %>
+                            <li class="slider__item">
+                                <article class="card-item">
+                                    <a class="card-item__link" href="/shop/item">
+                                        <picture class="card-item__cover">
+                                            <span class="card-item__tag">Nuevo</span>
+                                            <img class="card-item__img--front" src="<%= character.img_front %>" alt="<%= character.product_description %>">
+                                            <img class="card-item__img--back" src="<%= character.img_back %>" alt="<%= character.product_description%>">
+                                        </picture>
+                                        <div class="card-item__content">
+                                            <p class="card-item__license"><%= character.licence_name %></p>
+                                            <h4 class="card-item__name"><%= character.product_name %></h4>
+                                            <p class="card-item__price"><%= character.product_price %>-</p>
+                                            <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+                        <%});%>
+                    </ul>               
+                <% })%>
+            </section>
+                
             <section class="pagination">
                 <ul class="pagination__list">
                     <li><a class="disabled" href="#"><iconify-icon id="icono-izquierda" icon="tabler:chevron-down"></iconify-icon></a></li>
