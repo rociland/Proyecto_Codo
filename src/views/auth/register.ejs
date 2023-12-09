@@ -17,29 +17,29 @@
             <form action="/auth/register" method="POST" class="form__container" enctype="application/x-www-form-urlencoded">
                 <div class="contain-input">
                     <div class="div-input">
-                        <p class="text"><label for="user"></label>Nombre:</p>
-                        <input type="text" name="user-nombre" class="login-input" placeholder="John"> 
+                        <p class="text"><label for="name"></label>Nombre:</p>
+                        <input type="text" name="name" class="login-input" placeholder="John" required> 
                     </div>
                     <div class="div-input">
-                        <p class="text"><label for="user"></label>Apellido:</p>
-                        <input type="text" name="user-apellido" class="login-input" placeholder="Doe"> 
+                        <p class="text"><label for="lastname"></label>Apellido:</p>
+                        <input type="text" name="lastname" class="login-input" placeholder="Doe" required> 
                     </div>
                     <div class="div-input">
-                        <p class="text"><label for="user"></label>Email:</p>
-                        <input type="email" name="e-mail" class="login-input" placeholder="johndoe@correo.com"> 
+                        <p class="text"><label for="email"></label>Email:</p>
+                        <input type="email" name="email" class="login-input" placeholder="johndoe@correo.com" required> 
                     </div>
                     <div class="div-input div-input-contraseña">
-                        <p class="text"><label for="user"></label>Contraseña:</p> 
-                        <input type="password" name="password" class="login-input login-input-contraseña" placeholder="• • • • • • • •"> 
+                        <p class="text"><label for="password"></label>Contraseña:</p> 
+                        <input type="password" name="password" class="login-input login-input-contraseña" placeholder="• • • • • • • •" required>  
                     </div>
                     <div class="div-input">
-                        <p class="text"><label for="user"></label>Repita Contraseña:</p> 
-                        <input type="password" name="password" class="login-input login-input-contraseña" placeholder="• • • • • • • •"> 
+                        <p class="text"><label for="confirm_password"></label>Repita Contraseña:</p> 
+                        <input type="password" name="confirm_password" class="login-input login-input-contraseña" placeholder="• • • • • • • •" required> 
                     </div>
                     </div>
                 </div>
                 <div class="div-check">
-                    <input type="button" value="Registrar" class="submit-btn">
+                    <input type="submit" value="Registrar" class="submit-btn">
                     <div class="check">
                         <input type="checkbox" name="acepted" class="btn-checkbox">
                         <label class="check-label"> Acepto <span class="aceptar_tyc">términos y condiciones</span> </label>
@@ -49,6 +49,5 @@
         </section>
     </main>
     <%- include('../partials/footer')%>
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>

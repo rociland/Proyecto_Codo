@@ -1,17 +1,53 @@
-const { getItems } = require('../models/product.model');
+const { getItems, getItem, createItem, editItem, deleteItem } = require('../models/product.model');
 
 const adminControllers = {
 
     admin: async (req, res) => {
-        const products = await getItems();
-        console.log(products[0]);
-        res.render('../views/admin/admin', products);
+
+        try {
+            const products = await getItems();
+            res.render('../views/admin/admin', { products });
+        } catch (error) {
+            console.error('Error al obtener los items:', error);
+            res.status(500).send('Error al obtener los items');
+        }
     },
+
     createView: (req, res) => res.render('../views/admin/create'),
-    create: (req, res) => res.send('Route for adding a new item'),
+
+    create: async (req, res) => {
+        try {
+            const data = {
+                product_name: req.body.product_name,
+                product_description: req.body.product_description,
+                price: req.body.product_price,
+                stock: req.body.stock,
+                discount: req.body.discount,
+                sku: req.body.product_sku,
+                dues: req.body.instalment,
+                licence_id: req.body.licence_name,
+                category_id: req.body.category_name
+            }
+            const newItem = await createItem(data);
+            res.redirect('/admin');
+        } catch (error) {
+            console.error('Error al crear el item:', error);
+            res.status(500).send('Error al crear el item');
+        }
+    },
     editView: (req, res) => res.render('../views/admin/edit'),
     edit: (req, res) => res.send('Route for editing item'),
-    delete: (req, res) => res.send('Route for deleting item')
+
+    delete: async (req, res) => {
+        try {
+            const id = req.params.id;
+            const itemDeleted = await deleteItem(id);
+            res.redirect('/admin');
+        } catch (error) {
+            console.error('Error al obtener los items:', error);
+            res.status(500).send('Error al obtener los items');
+        }
+    }
 }
 
 module.exports = adminControllers;
