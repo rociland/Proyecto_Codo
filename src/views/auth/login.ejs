@@ -16,18 +16,18 @@
             <form action="/auth/login" method="POST" class="form__container" enctype="application/x-www-form-urlencoded">
                 <div class="contain-input">
                     <div class="div-input">
-                        <p class="text"><label for="user"></label>Email:</p>
-                        <input type="text" name="user" class="login-input" placeholder="johndoe@correo.com"> 
+                        <p class="text"><label for="email"></label>Email:</p>
+                        <input type="text" name="email" class="login-input" placeholder="johndoe@correo.com" required> 
                     </div>
                     <div class="div-input">
-                        <p class="text"><label for="user"></label>Contraseña:</p> 
-                        <input type="password" name="password" class="login-input" placeholder="••••••••"> 
+                        <p class="text"><label for="password"></label>Contraseña:</p> 
+                        <input type="password" name="password" class="login-input" placeholder="••••••••" required> 
                     </div>
                 </div>
                 <div class="div-check">
-                    <input type="button" value="Ingresar" class="submit-btn">
+                    <input type="submit" value="Ingresar" class="submit-btn">
                     <div>
-                        <input type="checkbox" name="acepted">
+                        <input type="checkbox" name="accepted">
                         <label class="check-label">Recordame</label>
                     </div>
                 </div>
@@ -36,7 +36,6 @@
         </section>
     </main>
     <%- include('../partials/footer')%>
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>
 

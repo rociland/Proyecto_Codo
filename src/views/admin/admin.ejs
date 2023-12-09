@@ -39,9 +39,9 @@
             <td><%= product.product_id %></td>
             <td><%= product.sku %></td>
             <td><%= product.product_name %></td>
-            <td><%= product.licence_id %></td>
-            <td><a href="/admin/edit/"><img class="table__pencil" src="/img/icons/edit_pencil.svg" alt=""></a></td>
-            <td><form action="/admin/delete/?_method=DELETE" method="POST" enctype="application/x-www-form-urlencoded"><button class="button_admin" type="submit"><img class="table__trash" src="/img/icons/delete_trash.svg" alt=""></button></form></td>
+            <td><%= product.licence_name %></td>
+            <td><a href="/admin/edit/<%= product.product_id%>"><img class="table__pencil" src="/img/icons/edit_pencil.svg" alt=""></a></td>
+            <td><form action="/admin/delete/<%= product.product_id %>?_method=DELETE" method="POST" enctype="application/x-www-form-urlencoded"><button class="button_admin" type="submit"><img class="table__trash" src="/img/icons/delete_trash.svg" alt=""></button></form></td>
           </tr>
           <% }); %>
         </tbody>
