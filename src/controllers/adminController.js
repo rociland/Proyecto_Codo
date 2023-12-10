@@ -1,8 +1,6 @@
 const { getItems, getItem, createItem, editItem, deleteItem } = require('../models/product.model');
-const  ItemsService = require ('../services/itemServices');
-const  CategoryService = require ('../services/categoryServices');
-const  LicenceService = require ('../services/licenceServices');
 
+const adminControllers = {
 
     admin: async (req, res) => {
 
@@ -37,21 +35,22 @@ const  LicenceService = require ('../services/licenceServices');
             res.status(500).send('Error al crear el item');
         }
     },
-    editView: (req, res) => res.render('../views/admin/edit'),
-    edit: (req, res) => res.send('Route for editing item'),
+    
 
-    editItem: async (req, res) => {
-                const id = req.params.id;
-                const { data: categories } = await CategoryService.getallItemsCategories();
-                const { data: licence } = await  LicenceService.getallItemsLicences();
-                const { data } = await  ItemsService.getItem (id);
-                console.log(categories, licences);
-                res.render ('./admin/edit' , { product:product,
-                item: data [0], 
-                categories,
-                licences
-                }); 
-            },
+    editView: async (req, res) => {
+        const id = req.params.id;
+        const { data: categories } = await CategoryService.getallItemsCategories();
+        const { data: licence } = await  LicenceService.getallItemsLicences();
+        const { data } = await  ItemsService.getItem (id);
+        console.log(categories, licences);
+        res.render ('../views/admin/edit' , { product:product,
+        item: data [0], 
+        categories,
+        licences
+        }); 
+    },
+
+
 
 
 

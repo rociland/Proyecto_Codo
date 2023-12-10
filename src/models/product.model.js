@@ -33,12 +33,23 @@ const createItem = async (data) => {
     }
 }
 
-const editItem = async (id) => {}
-
-const deleteItem = async (id) => {
+const editItem = async (id) => {
     try {
-        const [rows] = await conn.query(`DELETE FROM product WHERE product_id = ?`, id);
+        const [rows] = await conn.query(`UPDATE FROM product WHERE product_id = ?`, id);
         return rows;
+    } catch (error) {
+        throw error;
+    } finally {
+        conn.releaseConnection();
+    }
+}
+
+
+const getallItemsLicences = async (id) => {
+    try {
+        const [licence] = await Lawait conn.query(`SELECT from WHERE product_id = ?`, licence_id );
+        console.log(licence);
+        return licence;
     } catch (error) {
         throw error;
     } finally {
@@ -48,6 +59,7 @@ const deleteItem = async (id) => {
 
 module.exports = {
  getItems,
+ getallItemsLicences,
  getItem,
  createItem,
  editItem,
