@@ -2,7 +2,7 @@ const { conn } = require('../config/conn');
 
 const getItems = async () => {
     try {
-        const [rows] = await conn.query(`SELECT p.product_id, p.sku, p.product_name, p.image_front, p.image_back, l.licence_name FROM product p JOIN licence l ON p.licence_id = l.licence_id`);
+        const [rows] = await conn.query(`SELECT p.product_id, p.sku, p.price, p.product_name, p.image_front, p.image_back, l.licence_name FROM product p JOIN licence l ON p.licence_id = l.licence_id`);
         //console.log(rows);
         return rows;
     } catch (error) {
@@ -14,7 +14,8 @@ const getItems = async () => {
 
 const getItem = async (id) => {
     try {
-        const [rows] = await conn.query();
+        const [rows] = await conn.query(`SELECT p.product_id, p.product_name, p.product_description, p.sku, p.price, p.stock, p.discount, p.image_front, p.image_back, l.licence_name FROM product p INNER JOIN licence l ON p.licence_id = l.licence_id WHERE p.product_id = ?`, id);
+        return rows[0];
     } catch (error) {
         throw error;
     } finally {
@@ -33,7 +34,17 @@ const createItem = async (data) => {
     }
 }
 
-const editItem = async (id) => {}
+const editItem = async (item, id) => {
+
+    try {
+        const [edit] = await conn.query(`UPDATE product SET ? WHERE product_id = ?`, [item, id]);
+        return edit;
+    } catch (error) {
+        throw error;
+    } finally {
+        await conn.releaseConnection();
+    }
+}
 
 const deleteItem = async (id) => {
     try {

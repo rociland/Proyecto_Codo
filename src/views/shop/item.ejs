@@ -12,10 +12,10 @@
     <main>
         <section class="item container">
             <article class="item__article">
-                <p class="item__article__from">STAR WARS</p>
-                <h3 class="item__article__title">BABY YODA BLUEBALL</h3>
-                <p class="item__article__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
-                <p class="item__article__price">$1799,99</p>
+                <p class="item__article__from"><%= character.licence_name%></p>
+                <h3 class="item__article__title"><%= character.product_name%></h3>
+                <p class="item__article__description"><%= character.product_description%></p>
+                <p class="item__article__price">$<%= character.price%></p>
                 <div class="item__article__buy">
                     <input class="item__quantity" type="number" name="quantity" id="quantity" value="0" min="0" max="99" readonly>
                     <div class="item__article__buy__button">
@@ -27,8 +27,8 @@
                 <a class="item__article__link" href=""><span>Ver métodos de pago</span> - 3 CUOTAS SIN INTERÉS</a>
             </article>
             <picture class="item__img card-item__cover">
-                <img class="card-item__img--front" src="/img/star-wars/baby-yoda-1.webp"  alt="">
-                <img class="card-item__img--back" src="/img/star-wars/baby-yoda-box.webp"  alt="">
+                <img class="card-item__img--front" src="/img/<%= character.image_front%>"  alt="<%= character.product_description%>">
+                <img class="card-item__img--back" src="/img/<%= character.image_back%>"  alt="<%= character.product_description%>">
             </picture>
         </section>
     <%- include('../partials/slider')%>
