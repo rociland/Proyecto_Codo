@@ -13,34 +13,34 @@
     <main class="main container">
         <h2 class="title">EDITAR ITEM</h2>
         <section class="form">
-            <form class="form__text" action="/admin/edit/?_method=PUT" method="POST" enctype="application/x-www-form-urlencoded">
+            <form class="form__text" action="/admin/edit/<%= product.product_id %>?_method=PUT" method="POST" enctype="application/x-www-form-urlencoded">
                 <label for="category_name">Categoría:</label>
                 <select class="form__select" id="category" name="category_name">
-                    <option value="" selected>Figuras</option>
-                    <option value="keychains">Llaveros</option>
-                    <option value="shirts">Remeras</option>
+                    <option value="1" selected>Figuras</option>
+                    <option value="3">Llaveros</option>
+                    <option value="2">Remeras</option>
                 </select>
                 <label class="form__subtitle" for="licence_name">Licencia:</label>
-                <select class="form__select" id="license" name="licence_name">
+                <select class="form__select" id="license" name="licence_name">         
                     <option value="" selected>Naruto Shippuden</option>
-                    <option value="">Star Wars</option>
-                    <option value="">Pokemon</option>
-                    <option value="">Harry Potter</option>
+                    <option value="2">Star Wars</option>
+                    <option value="1">Pokemon</option>
+                    <option value="3">Harry Potter</option>
                 </select><br><br>
                 <label for="product_name">Nombre del producto:</label>
-                <input class="form__line" id="line-size" type="text" name="product_name" placeholder="Kakashi Hatake Shippuden Saga"><br><br>
-                <textarea class="form__textarea" name="product_description" id="description" rows="6" cols="50" placeholder="Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori."></textarea><br>
+                <input class="form__line" id="line-size" type="text" name="product_name" value="<%= product.product_name%>" ><br><br>
+                <textarea class="form__textarea" name="product_description" id="description" rows="6" cols="50" placeholder="Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori."> <%= product.product_description%> </textarea><br>
                 <section class="first__line">
                     <label for="product_sku">SKU:</label>
-                    <input class="form__line" id="line-size2" type="text" name="product_sku" placeholder="NAR001012">
+                    <input class="form__line" id="line-size2" type="text" name="product_sku" placeholder="NAR001012" value="<%= product.sku%>">
                     <label class="form__subtitle" for="product_price">Precio:</label>
-                    <input class="form__line" id="line-size2" type="number" name="product_price" min="0" placeholder="$1.799,00">
+                    <input class="form__line" id="line-size2" type="number" name="product_price" min="0"  value="<%= product.price%>">
                     <label class="form__subtitle" for="stock">Stock:</label>
-                    <input class="form__line" id="line-size3" type="number" name="stock" min="0" placeholder="10"><br><br>
+                    <input class="form__line" id="line-size3" type="number" name="stock" min="0" value="<%= product.stock%>"><br><br>
                 </section>
                 <section class="first__line">
                     <label for="discount">Descuento:</label>
-                    <input class="form__line" id="line-size3" type="number" name="discount" min="0" placeholder="10%">
+                    <input class="form__line" id="line-size3" type="number" name="discount" min="0" value="<%= product.discount%>" >
                     <label class="form__subtitle" for="instalment">Cuotas:</label>
                     <select class="form__select" id="instalment" name="instalment">
                         <option value="">3 Cuotas sin interés</option>
