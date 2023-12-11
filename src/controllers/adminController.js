@@ -26,7 +26,9 @@ const adminControllers = {
                 sku: req.body.product_sku,
                 dues: req.body.instalment,
                 licence_id: req.body.licence_name,
-                category_id: req.body.category_name
+                category_id: req.body.category_name,
+                image_front: '/coming_soon.jpg',
+                image_back: '/coming_soon.jpg'
             }
             const newItem = await createItem(data);
             res.redirect('/admin');
