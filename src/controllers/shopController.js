@@ -6,7 +6,16 @@ const shopControllers = {
 
     shop: async (req, res) => {
         try {
-            const characters = await getItems();
+
+            const licenceName = req.query.licence_name;
+            let characters;
+    
+            if (licenceName) {
+                characters = (await getItems()).filter(character => character.licence_name === licenceName);
+            } else {
+                characters = await getItems();
+            }
+
             res.render('../views/shop/shop', { characters });   
         } catch (error) {
             console.error('Error al obtener los items:', error);
@@ -15,10 +24,11 @@ const shopControllers = {
     },
 
     item: async (req, res) => {
+        
         try {
             const id = req.params.id;
             const character = await getItem(id);
-            res.render('../views/shop/item', { character })
+        res.render('../views/shop/item', { character })
         } catch (error) {
             console.error('Error al obtener el item:', error);
             res.status(500).send('Error al obtener el item');

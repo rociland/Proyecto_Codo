@@ -2,7 +2,7 @@ const { conn } = require('../config/conn');
 
 const getItems = async () => {
     try {
-        const [rows] = await conn.query(`SELECT p.product_id, p.sku, p.price, p.product_name, p.image_front, p.image_back, l.licence_name FROM product p JOIN licence l ON p.licence_id = l.licence_id`);
+        const [rows] = await conn.query(`SELECT p.product_id, p.sku, p.price, p.dues, p.product_name, p.image_front, p.image_back, l.licence_name FROM product p JOIN licence l ON p.licence_id = l.licence_id`);
         //console.log(rows);
         return rows;
     } catch (error) {
@@ -14,7 +14,7 @@ const getItems = async () => {
 
 const getItem = async (id) => {
     try {
-        const [rows] = await conn.query(`SELECT p.product_id, p.product_name, p.product_description, p.sku, p.price, p.stock, p.discount, p.image_front, p.image_back, l.licence_name FROM product p INNER JOIN licence l ON p.licence_id = l.licence_id WHERE p.product_id = ?`, id);
+        const [rows] = await conn.query(`SELECT p.product_id, p.product_name, p.product_description, p.sku, p.dues, p.price, p.stock, p.discount, p.image_front, p.image_back, l.licence_name FROM product p INNER JOIN licence l ON p.licence_id = l.licence_id WHERE p.product_id = ?`, id);
         return rows[0];
     } catch (error) {
         throw error;
